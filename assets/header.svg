@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Palash Chandra Das. Ph.D. Candidate in Geography, Texas A&amp;M University. Geospatial intelligence for resilient cities, disaster recovery, healthy communities, safer mobility, and climate adaptation.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07101D"/>
+      <stop offset=".55" stop-color="#0E213B"/>
+      <stop offset="1" stop-color="#16406A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".78" cy=".45" r=".45">
+      <stop offset="0" stop-color="#4FC3EF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#4FC3EF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4FC3EF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#4FC3EF"/>
+      <stop offset="1" stop-color="#9BE7FF" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="1200" height="340" rx="18"/></clipPath>
+    <style>
+      text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+      .kick{font-size:15px;font-weight:600;letter-spacing:3px;fill:#4FC3EF}
+      .name{font-size:54px;font-weight:700;fill:#FFFFFF}
+      .role{font-size:19px;fill:#C9D6E8}
+      .lead{font-size:28px;font-weight:600;fill:#FFFFFF}
+      .w{font-size:28px;font-weight:700;fill:#4FC3EF;opacity:0;animation:cycle 15s infinite}
+      .w1{opacity:1}
+      .w1{animation-delay:-1s}.w2{animation-delay:2s}.w3{animation-delay:5s}.w4{animation-delay:8s}.w5{animation-delay:11s}
+      @keyframes cycle{0%{opacity:0;transform:translateY(14px)}3%,17%{opacity:1;transform:translateY(0)}20%,100%{opacity:0;transform:translateY(-14px)}}
+            .grid line{stroke:#FFFFFF;stroke-opacity:.05}
+      .contour{fill:none;stroke:#4FC3EF;stroke-opacity:.10;stroke-width:1.2}
+      .arc{fill:none;stroke:url(#flow);stroke-width:2;stroke-linecap:round;stroke-dasharray:60 340;animation:dash 4.5s linear infinite}
+      .arc.b{animation-duration:6s;animation-delay:-2s}.arc.c{animation-duration:5.2s;animation-delay:-1s}.arc.e{animation-duration:7s;animation-delay:-3s}
+      .base{fill:none;stroke:#4FC3EF;stroke-opacity:.16;stroke-width:1}
+      @keyframes dash{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}
+      .node{fill:#4FC3EF}
+      .ring{fill:none;stroke:#4FC3EF;stroke-width:1.5;transform-box:fill-box;transform-origin:center;animation:ping 3s ease-out infinite}
+      .r2{animation-delay:.8s}.r3{animation-delay:1.6s}.r4{animation-delay:2.3s}
+      @keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(3.2);opacity:0}}
+      @media (prefers-reduced-motion: reduce){.w,.arc,.ring{animation:none}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+
+    <!-- graticule -->
+    <g class="grid">
+      <line x1="0" y1="85" x2="1200" y2="85"/><line x1="0" y1="170" x2="1200" y2="170"/><line x1="0" y1="255" x2="1200" y2="255"/>
+      <line x1="200" y1="0" x2="200" y2="340"/><line x1="400" y1="0" x2="400" y2="340"/><line x1="600" y1="0" x2="600" y2="340"/>
+      <line x1="800" y1="0" x2="800" y2="340"/><line x1="1000" y1="0" x2="1000" y2="340"/>
+    </g>
+
+    <!-- contour lines -->
+    <path class="contour" d="M720 340 C760 260 860 250 900 200 S1000 120 1080 140 S1200 120 1220 90"/>
+    <path class="contour" d="M760 340 C800 280 880 275 930 225 S1020 160 1090 175 S1200 160 1220 135"/>
+    <path class="contour" d="M810 340 C850 300 905 300 960 255 S1045 205 1100 212 S1200 200 1220 182"/>
+    <path class="contour" d="M680 -10 C720 40 800 60 870 50 S990 20 1060 40 S1180 60 1220 30"/>
+
+    <!-- mobility network: faint base arcs + moving flows -->
+    <g>
+      <path class="base" d="M820 230 Q900 110 1010 150"/>
+      <path class="base" d="M1010 150 Q1080 90 1130 210"/>
+      <path class="base" d="M820 230 Q960 300 1130 210"/>
+      <path class="base" d="M900 80 Q960 100 1010 150"/>
+      <path class="base" d="M900 80 Q820 140 820 230"/>
+      <path class="arc"   d="M820 230 Q900 110 1010 150"/>
+      <path class="arc b" d="M1010 150 Q1080 90 1130 210"/>
+      <path class="arc c" d="M1130 210 Q960 300 820 230"/>
+      <path class="arc e" d="M900 80 Q960 100 1010 150"/>
+      <path class="arc b" d="M820 230 Q820 140 900 80"/>
+    </g>
+    <g>
+      <circle class="node" cx="820" cy="230" r="5"/><circle class="ring" cx="820" cy="230" r="6"/>
+      <circle class="node" cx="1010" cy="150" r="6"/><circle class="ring r2" cx="1010" cy="150" r="7"/>
+      <circle class="node" cx="1130" cy="210" r="4.5"/><circle class="ring r3" cx="1130" cy="210" r="5"/>
+      <circle class="node" cx="900" cy="80" r="4"/><circle class="ring r4" cx="900" cy="80" r="5"/>
+      <circle class="node" cx="960" cy="262" r="3" opacity=".7"/>
+      <circle class="node" cx="1070" cy="118" r="2.5" opacity=".6"/>
+    </g>
+
+    <!-- text -->
+    <g transform="translate(64 0)">
+      <g ><rect x="0" y="69" width="36" height="3" fill="#4FC3EF"/>
+        <text class="kick" x="48" y="76">GISCIENCE  •  GEOAI  •  SPATIAL DATA SCIENCE</text></g>
+      <text class="name" x="0" y="140">Palash Chandra Das</text>
+      <text class="role" x="0" y="178">Ph.D. Candidate in Geography  ·  Texas A&amp;M University</text>
+      <g >
+        <text class="lead" x="0" y="250">Geospatial intelligence for</text>
+        <text class="w w1" x="0" y="290">resilient cities</text>
+        <text class="w w2" x="0" y="290">disaster recovery</text>
+        <text class="w w3" x="0" y="290">healthy communities</text>
+        <text class="w w4" x="0" y="290">safer mobility</text>
+        <text class="w w5" x="0" y="290">climate adaptation</text>
+      </g>
+    </g>
+  </g>
+</svg>

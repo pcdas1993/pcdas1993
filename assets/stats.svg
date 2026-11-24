@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150" role="img" aria-label="11 journal articles, 9 conference talks and papers, 7 awards, 10+ years of university teaching and research">
+  <defs>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#11284A"/><stop offset="1" stop-color="#0B1A30"/>
+    </linearGradient>
+    <style>
+      text{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif}
+      .num{font-size:46px;font-weight:700;fill:#FFFFFF}
+      .lab{font-size:15px;font-weight:600;fill:#4FC3EF;letter-spacing:1.5px}
+      .sub{font-size:13.5px;fill:#AFC0D6}
+      .edge{animation:pulse 4s ease-in-out infinite}
+      .c2 .edge{animation-delay:1s}.c3 .edge{animation-delay:2s}.c4 .edge{animation-delay:3s}
+      @keyframes pulse{0%,100%{stroke-opacity:.2}50%{stroke-opacity:.8}}
+      .bar{animation:slide 4s ease-in-out infinite}
+      .c2 .bar{animation-delay:1s}.c3 .bar{animation-delay:2s}.c4 .bar{animation-delay:3s}
+      @keyframes slide{0%,100%{width:80px}50%{width:130px}}
+      @media (prefers-reduced-motion: reduce){.edge,.bar{animation:none}}
+    </style>
+  </defs>
+  <g>
+    <rect x="2" y="2" width="282" height="146" rx="14" fill="url(#cardbg)" stroke="#4FC3EF" stroke-opacity=".25" class="edge"/>
+    <rect class="bar" x="26" y="122" width="80" height="3" rx="1.5" fill="#4FC3EF"/>
+    <text class="num" x="26" y="66">11</text><text class="lab" x="26" y="92">JOURNAL ARTICLES</text>
+    <text class="sub" x="26" y="112">Annals of GIS, Scientific Reports…</text>
+  </g>
+  <g class="c c2" transform="translate(305 0)">
+    <rect x="2" y="2" width="282" height="146" rx="14" fill="url(#cardbg)" stroke="#4FC3EF" stroke-opacity=".25" class="edge"/>
+    <rect class="bar" x="26" y="122" width="80" height="3" rx="1.5" fill="#4FC3EF"/>
+    <text class="num" x="26" y="66">9</text><text class="lab" x="26" y="92">TALKS &amp; PAPERS</text>
+    <text class="sub" x="26" y="112">including 3 at AAG</text>
+  </g>
+  <g class="c c3" transform="translate(610 0)">
+    <rect x="2" y="2" width="282" height="146" rx="14" fill="url(#cardbg)" stroke="#4FC3EF" stroke-opacity=".25" class="edge"/>
+    <rect class="bar" x="26" y="122" width="80" height="3" rx="1.5" fill="#4FC3EF"/>
+    <text class="num" x="26" y="66">7</text><text class="lab" x="26" y="92">AWARDS</text>
+    <text class="sub" x="26" y="112">Kasperson Award · TxGIS 1st place</text>
+  </g>
+  <g class="c c4" transform="translate(915 0)">
+    <rect x="2" y="2" width="282" height="146" rx="14" fill="url(#cardbg)" stroke="#4FC3EF" stroke-opacity=".25" class="edge"/>
+    <rect class="bar" x="26" y="122" width="80" height="3" rx="1.5" fill="#4FC3EF"/>
+    <text class="num" x="26" y="66">10+</text><text class="lab" x="26" y="92">YEARS</text>
+    <text class="sub" x="26" y="112">university teaching &amp; research</text>
+  </g>
+</svg>

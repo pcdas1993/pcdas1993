@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-label="Solar suitability workflow: DSM to slope, aspect and solar radiation to suitable rooftops">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1A30"/><stop offset="1" stop-color="#1B3F66"/></linearGradient>
+    <radialGradient id="sun" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFD166"/><stop offset="1" stop-color="#F4A300"/></radialGradient>
+    <style>
+      text{font-family:'Segoe UI',-apple-system,'Helvetica Neue',Arial,sans-serif}
+      .rays{transform-origin:400px 150px;animation:spin 24s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .roof{animation:glow 3s ease-in-out infinite}.r2{animation-delay:.6s}.r3{animation-delay:1.2s}.r4{animation-delay:1.8s}
+      @keyframes glow{0%,100%{fill:#2D5B8A}50%{fill:#FFC43D}}
+      @media (prefers-reduced-motion: reduce){.rays,.roof{animation:none}}
+    </style>
+  </defs>
+  <rect width="800" height="450" rx="16" fill="url(#g)"/>
+  <g class="rays" stroke="#FFD166" stroke-width="4" stroke-linecap="round" opacity=".8">
+    <line x1="400" y1="70" x2="400" y2="88"/><line x1="400" y1="212" x2="400" y2="230"/><line x1="320" y1="150" x2="338" y2="150"/><line x1="462" y1="150" x2="480" y2="150"/>
+    <line x1="343" y1="93" x2="356" y2="106"/><line x1="444" y1="194" x2="457" y2="207"/><line x1="343" y1="207" x2="356" y2="194"/><line x1="444" y1="106" x2="457" y2="93"/>
+  </g>
+  <circle cx="400" cy="150" r="46" fill="url(#sun)"/>
+  <g>
+    <rect x="150" y="300" width="110" height="70" fill="#163A60"/><polygon fill="#2D5B8A" class="roof"    points="140,300 205,255 270,300"/>
+    <rect x="290" y="310" width="90"  height="60" fill="#163A60"/><polygon fill="#2D5B8A" class="roof r2" points="282,310 335,272 388,310"/>
+    <rect x="410" y="295" width="120" height="75" fill="#163A60"/><polygon fill="#2D5B8A" class="roof r3" points="400,295 470,248 540,295"/>
+    <rect x="560" y="312" width="90"  height="58" fill="#163A60"/><polygon fill="#2D5B8A" class="roof r4" points="552,312 605,276 658,312"/>
+    <rect x="100" y="370" width="600" height="3" fill="#4FC3EF" opacity=".5"/>
+  </g>
+  <text x="400" y="415" text-anchor="middle" font-size="20" fill="#C9D6E8">DSM → slope · aspect · solar radiation → suitable rooftops</text>
+</svg>

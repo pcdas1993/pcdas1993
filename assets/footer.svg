@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="90" viewBox="0 0 1200 90" role="img" aria-label="Decorative wave">
+  <defs>
+    <linearGradient id="f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0E213B"/><stop offset="1" stop-color="#16406A"/></linearGradient>
+    <style>
+      .w1{animation:sway 9s ease-in-out infinite alternate}.w2{animation:sway 12s ease-in-out infinite alternate-reverse;opacity:.55}
+      @keyframes sway{from{transform:translateX(0)}to{transform:translateX(-120px)}}
+      @media (prefers-reduced-motion: reduce){.w1,.w2{animation:none}}
+    </style>
+  </defs>
+  <path class="w2" fill="#4FC3EF" d="M0 50 C150 20 300 80 450 50 S750 20 900 50 S1200 80 1350 50 V90 H0Z"/>
+  <path class="w1" fill="url(#f)" d="M0 60 C150 35 300 85 450 60 S750 35 900 60 S1200 85 1350 60 V90 H0Z"/>
+</svg>
